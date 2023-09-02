@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    box-shadow: inset -1px 3px 8px 5px rgb(172, 176, 239),
+        2px 5px 16px 0px #0b325e, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+/*********Footer*********/
+footer {
+    width: 100%;
+    height: 100%;
+    grid-area: 16/1/17/17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > * {
+    padding: 0.15rem;
+}
+/*********Buttons*********/
+.Btn {
+    appearance: none;
+    background-color: rgb(109, 220, 187);
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 8px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.Btn:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+}
+
+.Btn:hover {
+    background-color: rgb(172, 176, 239);
+}
+
+.Btn:focus {
+    box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+    outline: none;
+}
+
+.Btn:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    cursor: default;
+}
+
+.Btn:active {
+    background-color: rgb(109, 220, 187);
+    box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}
+/*----------BTN-17--------*/
+.button-17 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+        rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    height: 28px;
+    justify-content: center;
+    letter-spacing: 0.25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 15px 12px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform, opacity;
+    z-index: 0;
+}
+
+.button-17:hover {
+    background: #f6f9fe;
+    color: #174ea6;
+}
+
+.button-17:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+        0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+}
+
+.button-17:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+}
+/*****LandingPager *****/
+.LandingPage-Main {
+    grid-area: 4/4/12/14; /*od 1366px,  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    --b: 1em; /* border width */
+    --c: 6em; /* corner size */
+    --r: 4em; /* corner rounding */
+    position: absolute;
+    border: solid var(--b) transparent;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+        position: absolute;
+        inset: calc(-1 * var(--b));
+        border: inherit;
+        border-radius: var(--r);
+        background: linear-gradient(
+                rgb(109, 220, 187),
+                deeppink,
+                rgb(150, 152, 232)
+            )
+            border-box;
+        --corner: conic-gradient(
+                from -90deg at var(--c) var(--c),
+                red 25%,
+                #0000 0
+            )
+            0 0 / calc(100% - var(--c)) calc(100% - var(--c)) border-box;
+        --inner: conic-gradient(red 0 0) padding-box;
+        -webkit-mask: var(--corner), var(--inner);
+        -webkit-mask-composite: source-out;
+        mask: var(--corner) subtract, var(--inner);
+        content: "";
+    }
+}
+.Welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 10px 13px -7px #000000,
+        15px 15px 15px 15px rgba(255, 255, 255, 0);
+    width: 80%;
+    height: 80%;
+    padding: 9.5%;
+}
+.Logo-Padlock {
+    position: absolute;
+    grid-area: 2/8/5/10;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/logolockec.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.Logo-Txt {
+    position: absolute;
+    grid-area: 13/4/15/14;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/logo-txt.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

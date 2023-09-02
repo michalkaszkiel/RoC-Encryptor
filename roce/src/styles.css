@@ -4,9 +4,13 @@
     box-sizing: border-box;
     font-family: "Prompt", sans-serif;
 }
+html {
+    font-size: 16px;
+}
 body {
     margin: 0;
     padding: 0;
+    /* background-color: rgb(221, 221, 221); */
 }
 .App {
     width: 100vw;
@@ -151,11 +155,7 @@ footer > * {
         inset: calc(-1 * var(--b));
         border: inherit;
         border-radius: var(--r);
-        background: linear-gradient(
-                rgb(109, 220, 187),
-                deeppink,
-                rgb(150, 152, 232)
-            )
+        background: linear-gradient(rgb(44, 140, 249), deeppink, #1f87ff)
             border-box;
         --corner: conic-gradient(
                 from -90deg at var(--c) var(--c),
@@ -175,7 +175,7 @@ footer > * {
     flex-direction: column;
     justify-content: center;
     border-top: solid 3px deeppink;
-    border-bottom: solid 12px rgb(150, 152, 232);
+    border-bottom: solid 12px rgb(44, 140, 249);
     width: 85%;
     height: 80%;
     padding: 6%;
@@ -244,7 +244,7 @@ section {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: #ffffff;
+
     width: 100%;
     text-align: center;
     height: 100%;
@@ -315,4 +315,194 @@ section > p {
     .LandingPage-Main {
         grid-area: 4/1/15/-1;
     }
+}
+/************Cyphers************/
+.Cyphers-Main {
+    width: 100%;
+    height: 100%;
+    grid-area: 1/1/-1/-1;
+    background-image: url(./images/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+/************Encodings************/
+.Encoding {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 4rem;
+    box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
+        0px 50px 15px 22px rgba(0, 0, 0, 0);
+    grid-area: 3/2/14/7;
+    background-color: rgb(164, 183, 197);
+}
+
+.Encryption-Form {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    width: 100%;
+    height: 100%;
+}
+.Encryption-Div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    grid-area: 2/2/3/10;
+}
+.Input-Encode {
+    width: 100%;
+    grid-area: 3/2/4/10;
+}
+.fa-lock {
+    font-size: x-large;
+    margin: 1%;
+    padding: 1%;
+}
+.fa-lock-open {
+    font-size: x-large;
+    margin: 1%;
+    padding: 1%;
+}
+.selector {
+    width: 100%;
+    height: 100%;
+
+    grid-area: 3/2/5/10;
+}
+.Encrypted-Message {
+    grid-area: 7/2/10/10;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(229, 229, 229);
+    border-radius: 2rem;
+}
+.Encrypted-Message > h3 {
+    font-size: 1.1vw;
+}
+.Encrypted-Message > strong {
+    font-size: 0.9vw;
+}
+
+.H3-Img-En {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.H3-Img-En > h3 {
+    color: #fff;
+    font-size: 3vw;
+    text-align: center;
+    text-shadow: 0 0 10px #000;
+    padding: 2rem;
+}
+.H3-Img-En > img {
+    position: relative;
+    width: 45%;
+    height: auto;
+}
+/**************Decodings**************/
+.Decoding {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219, 219, 219);
+    grid-area: 7/8/14/12;
+    border-radius: 4rem;
+    box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
+        0px 50px 15px 22px rgba(0, 0, 0, 0);
+}
+.pulse-on {
+    transition: transform 0.3s;
+}
+.pulse-on:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.Decryption-Form {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    width: 100%;
+    height: 100%;
+}
+.Decryption-Div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    grid-area: 2/2/3/10;
+}
+.Input-Decode {
+    width: 100%;
+    grid-area: 3/2/4/10;
+}
+.selector {
+    width: 100%;
+    height: 100%;
+
+    grid-area: 3/2/5/10;
+}
+.Decrypted-Message {
+    grid-area: 7/2/10/10;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(229, 229, 229);
+    border-radius: 2rem;
+}
+.Decrypted-Message > h3 {
+    font-size: 1.1vw;
+}
+.Decrypted-Message > strong {
+    font-size: 0.9vw;
+}
+.H3-Img-De {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.H3-Img-De > h3 {
+    color: #fff;
+    font-size: 3vw;
+    text-align: center;
+    text-shadow: 0 0 10px #000;
+    padding: 2rem;
+}
+.H3-Img-De > img {
+    position: relative;
+    width: 25%;
+    height: auto;
 }

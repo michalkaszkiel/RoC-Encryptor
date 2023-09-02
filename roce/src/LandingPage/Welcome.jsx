@@ -1,5 +1,5 @@
 import Btn from "../Buttons/Btn";
-
+import Logo from "../Logo";
 const Welcome = ({ handleStyleChange }) => {
     return (
         <div className="Welcome">
@@ -8,7 +8,11 @@ const Welcome = ({ handleStyleChange }) => {
                 RoCipher is a password encryption tool that uses a rotational
                 cipher to encrypt your passwords.
             </p>
-            <Btn text={"Get Started"} style={{ width: "10rem" }} />
+            <Btn
+                text={"Get Started"}
+                style={{ width: "10rem" }}
+                onClick={handleStyleChange}
+            />
         </div>
     );
 };

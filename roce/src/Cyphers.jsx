@@ -1,5 +1,6 @@
 import Encode from "./Encode";
 import Decode from "./Decode";
+
 import { useState } from "react";
 const Cyphers = () => {
     const handleSetWindow = () => {

@@ -77,6 +77,7 @@ const Decode = ({ enCode, setEnCode }) => {
                             onSelection={handleSelectionChange}
                         />
                         <Btn17
+                            className="button-17 crypt"
                             text17={"Decrypt"}
                             style17={{
                                 gridArea: "5/2/6/10",
@@ -93,11 +94,13 @@ const Decode = ({ enCode, setEnCode }) => {
                             </strong>
                             {deCode && (
                                 <Btn17
+                                    className="button-17 copy"
                                     onClick={copyToClipboard}
                                     text17={!copied ? "Copy!" : "Copied!"}
                                 />
                             )}
                         </div>
+                        <i class="fa-solid fa-rotate"></i>
                     </form>
                 </div>
             )}

@@ -31,6 +31,7 @@ footer {
 }
 footer > * {
     padding: 0.15rem;
+    color: #000;
 }
 /*********Buttons*********/
 .Btn {
@@ -400,14 +401,18 @@ section > p {
 .Encrypted-Message > strong {
     font-size: 0.9vw;
 }
-
+.text-to-copy {
+    color: deeppink;
+    padding: 0.2rem;
+    margin: 0.2rem;
+}
 .H3-Img-En {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 .H3-Img-En > h3 {
@@ -505,4 +510,82 @@ section > p {
     position: relative;
     width: 25%;
     height: auto;
+}
+.fa-rotate {
+    font-size: x-large;
+    margin: 1%;
+    padding: 1%;
+    grid-area: 8/9/9/10;
+}
+.copy {
+    width: 15%;
+}
+.crypt {
+    padding: 2.5rem !important;
+}
+@media screen and (max-width: 1360px) {
+    .Encoding {
+        grid-area: 3/2/14/8;
+    }
+    .Decoding {
+        grid-area: 7/9/15/15;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .Encoding {
+        grid-area: 4/2/13/8;
+    }
+    .Decoding {
+        grid-area: 7/9/15/15;
+    }
+    .Cyphers-Main {
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 915px) {
+    .Encoding {
+        grid-area: 2/3/8/15;
+    }
+    .Decoding {
+        grid-area: 9/3/15/15;
+    }
+    .Encrypted-Message > h3 {
+        font-size: 1.5vw;
+    }
+    .Encrypted-Message > strong {
+        font-size: 1.5vw;
+    }
+    .Decrypted-Message > h3 {
+        font-size: 1.5vw;
+    }
+    .Decrypted-Message > strong {
+        font-size: 1.5vw;
+    }
+    .text-to-copy {
+        color: deeppink;
+        padding: 0;
+    }
+    .copy {
+        width: 4rem;
+        font-size: 50% !important;
+    }
+    .crypt {
+        padding: 1rem !important;
+        font-size: 50% !important;
+    }
+}
+@media screen and (max-width: 615px) {
+    .Encoding {
+        grid-area: 2/2/9/16;
+    }
+    .Decoding {
+        grid-area: 10/2/16/16;
+    }
+    .crypt {
+        margin-top: 1rem;
+    }
+    .button-17 {
+        padding: 0 !important;
+    }
 }

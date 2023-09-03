@@ -90,6 +90,7 @@ const Encode = ({ enCode, setEnCode, window, setWindow, handleSetWindow }) => {
                             onSelection={handleSelectionChange}
                         />
                         <Btn17
+                            className="button-17 crypt"
                             text17={"Encrypt"}
                             style17={{
                                 gridArea: "5/2/6/10",
@@ -97,15 +98,11 @@ const Encode = ({ enCode, setEnCode, window, setWindow, handleSetWindow }) => {
                             }}
                         />
                         <div className="Encrypted-Message">
-                            <h3>Your new password:</h3>
-                            <strong
-                                style={{ color: "deeppink" }}
-                                className="text-to-copy"
-                            >
-                                {enCode}
-                            </strong>
+                            <h3>Your encrypted password is:</h3>
+                            <strong className="text-to-copy">{enCode}</strong>
                             {enCode && (
                                 <Btn17
+                                    className="button-17 copy"
                                     onClick={copyToClipboard}
                                     text17={!copied ? "Copy!" : "Copied!"}
                                 />

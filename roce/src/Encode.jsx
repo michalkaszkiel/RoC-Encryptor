@@ -21,7 +21,7 @@ const Encode = ({ enCode, setEnCode, window, setWindow, handleSetWindow }) => {
     };
     const onSubmited = (event) => {
         event.preventDefault();
-        encrypt(inputValue, selected);
+        encrypt(inputValue.toLowerCase(), selected);
     };
     const handleToggle = () => {
         setShowPassword(!showPassword);

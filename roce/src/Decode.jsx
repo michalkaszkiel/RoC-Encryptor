@@ -18,7 +18,7 @@ const Decode = ({ enCode, setEnCode }) => {
     };
     const onSubmited = (event) => {
         event.preventDefault();
-        decrypt(Value, selected);
+        decrypt(Value.toLowerCase(), selected);
     };
     const decrypt = (password, index) => {
         let cipher = "";

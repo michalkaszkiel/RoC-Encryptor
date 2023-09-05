@@ -39,6 +39,7 @@ const Introduction = () => {
                                     </strong>
                                 </p>
                                 <Btn17
+                                    className="button-17"
                                     onClick={handleNext}
                                     text17={"Next"}
                                     style17={{ width: "8rem" }}
@@ -65,11 +66,13 @@ const Introduction = () => {
                                         onClick={handlePrevious}
                                         text17={"Back"}
                                         style17={{ width: "8rem" }}
+                                        className="button-17"
                                     />
                                     <Btn17
                                         onClick={handleNext}
                                         text17={"Next"}
                                         style17={{ width: "8rem" }}
+                                        className="button-17"
                                     />
                                 </div>
                             </section>
@@ -109,12 +112,14 @@ const Introduction = () => {
                                         onClick={handlePrevious}
                                         text17={"Back"}
                                         style17={{ width: "8rem" }}
+                                        className="button-17"
                                     />
                                     <Link to="/Cyphers">
                                         <Btn17
                                             onClick={handleLetsDoThis}
                                             text17={"Let's Do This!"}
                                             style17={{ width: "12rem" }}
+                                            className="button-17"
                                         />
                                         <i
                                             class="fa-solid fa-right-to-bracket"

@@ -85,7 +85,7 @@ const Decode = ({ enCode, setEnCode }) => {
                             }}
                         />
                         <div className="Decrypted-Message">
-                            <h3>Your new password:</h3>
+                            <h3>Your decrypted password:</h3>
                             <strong
                                 style={{ color: "rgb(80, 243, 115)" }}
                                 className="text-to-copy"
@@ -100,7 +100,7 @@ const Decode = ({ enCode, setEnCode }) => {
                                 />
                             )}
                         </div>
-                        <i class="fa-solid fa-rotate"></i>
+                        <i class="fa-solid fa-rotate" onClick={reloader}></i>
                     </form>
                 </div>
             )}

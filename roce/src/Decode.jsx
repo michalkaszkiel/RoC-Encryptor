@@ -86,12 +86,7 @@ const Decode = ({ enCode, setEnCode }) => {
                         />
                         <div className="Decrypted-Message">
                             <h3>Your decrypted password:</h3>
-                            <strong
-                                style={{ color: "rgb(80, 243, 115)" }}
-                                className="text-to-copy"
-                            >
-                                {deCode}
-                            </strong>
+                            <strong className="text-to-copy">{deCode}</strong>
                             {deCode && (
                                 <Btn17
                                     className="button-17 copy"

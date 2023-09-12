@@ -1,7 +1,9 @@
 # Rotational Cipher Encryptor:
+
 is web application designed to provide an easy-to-use Rotational Cipher encryption and decryption tool. This application allows you to secure your messages and data with a classic encryption technique known as the Caesar Cipher. With RoC you can encode and decode messages quickly and securely.
 
 ![RoC](https://cscx.org/caesar3.svg)
+
 ## Key Features:
 
 1. User-Friendly Encryption: Encrypt your messages with just a few clicks, ensuring the confidentiality of your data.
@@ -12,19 +14,19 @@ is web application designed to provide an easy-to-use Rotational Cipher encrypti
 
 ## Repository Structure:
 
-- src/Introduction.js: React component for the application's introduction and explanation of the Rotational Cipher.
+-   src/Introduction.js: React component for the application's introduction and explanation of the Rotational Cipher.
 
-- src/Cyphers.js: Main component managing the Encode and Decode functionalities.
+-   src/Cyphers.js: Main component managing the Encode and Decode functionalities.
 
-- src/Encode.js: Component for encrypting messages using the Rotational Cipher technique.
+-   src/Encode.js: Component for encrypting messages using the Rotational Cipher technique.
 
-- src/Decode.js: Component for decrypting messages encrypted with the Rotational Cipher.
+-   src/Decode.js: Component for decrypting messages encrypted with the Rotational Cipher.
 
-- src/Selection.js: Component for selecting the rotation key.
+-   src/Selection.js: Component for selecting the rotation key.
 
-- src/Buttons/Btn17.js and src/Buttons/Btn.jsx: Reusable button component for the user interface.
+-   src/Buttons/Btn17.js and src/Buttons/Btn.jsx: Reusable button component for the user interface.
 
-- src/images/: Images used in Project.
+-   src/images/: Images used in Project.
 
 ## Getting Started:
 
@@ -47,6 +49,7 @@ If you encounter any issues or would like to report a bug, please open an issue 
 I believe you find Roc useful and enjoy using it for your encryption needs. Thank you for checking out.
 
 ## Explanation
+
 ![Encoding-of-the-letters-in-The-Caesar-Cipher-6](https://github.com/michalkaszkiel/Rotational-Cipher-code-decode/assets/120386627/ac728624-e486-4d8b-8c48-d4459578402e)
 
 English alphabet consists of 26 characters. App can also code password with numbers from 0 to 9 to improve difficulty for unauthorized decryptors.
@@ -54,20 +57,18 @@ Cesar cipher class has its methods:
 
 1. encrypt()
 
-* takes two arguments: 
-    *       lowercased string which will be decrypted
-    *       the offset, the shift distance chosen by an index heading left.
-            Each letter is replaced by another letter of offset index located
-            a little further in the alphabet.
+-   takes two arguments:
+    -         lowercased string which will be decrypted
+    -         the offset, the shift distance chosen by an index heading left.
+              Each letter is replaced by another letter of offset index located
+              a little further in the alphabet.
 
 2. decrypt()
-* takes two arguments: 
-    *       decoded password - analogically method decrypts previously coded password,
-    *       the offset.
 
-
+-   takes two arguments:
+    -         decoded password - analogically method decrypts previously coded password,
+    -         the offset.
 
 ## Authors
 
-- [@michalkaszkiel] (https://github.com/michalkaszkiel)
-
+-   [@michalkaszkiel] (https://github.com/michalkaszkiel)

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/michalkaszkiel/RoC-Encryptor/static/css/main.88072d8d.css",
+    "main.js": "/michalkaszkiel/RoC-Encryptor/static/js/main.e2e28159.js",
+    "static/media/background.jpeg": "/michalkaszkiel/RoC-Encryptor/static/media/background.61a40ed22da60e2a234a.jpeg",
+    "static/media/locker.png": "/michalkaszkiel/RoC-Encryptor/static/media/locker.d8f75461aec3bd60ea94.png",
+    "static/media/logo.png": "/michalkaszkiel/RoC-Encryptor/static/media/logo.da1deeedd526d568335d.png",
+    "static/media/Decode.png": "/michalkaszkiel/RoC-Encryptor/static/media/Decode.0e038720cc3a0ecb45e8.png",
+    "static/media/Encode.png": "/michalkaszkiel/RoC-Encryptor/static/media/Encode.c3916ede0a12285596c4.png",
+    "index.html": "/michalkaszkiel/RoC-Encryptor/index.html",
+    "main.88072d8d.css.map": "/michalkaszkiel/RoC-Encryptor/static/css/main.88072d8d.css.map",
+    "main.e2e28159.js.map": "/michalkaszkiel/RoC-Encryptor/static/js/main.e2e28159.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88072d8d.css",
+    "static/js/main.e2e28159.js"
+  ]
+}

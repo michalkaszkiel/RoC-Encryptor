@@ -1,3 +1,0 @@
-[build]
-  command = "nvm install 18 && npm install && npm run build"
-  publish = "build"

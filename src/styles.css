@@ -804,16 +804,16 @@ section > p {
         margin-top: 1rem;
     }
     .Encrypted-Message > h3 {
-        font-size: 1vw;
+        font-size: 2vw;
     }
     .Encrypted-Message > strong {
-        font-size: 1vw;
+        font-size: 2.5vw;
     }
     .Decrypted-Message > h3 {
-        font-size: 1vw;
+        font-size: 2.5vw;
     }
     .Decrypted-Message > strong {
-        font-size: 1vw;
+        font-size: 2.5vw;
     }
     .copy {
         height: 0.8rem;
@@ -831,16 +831,16 @@ section > p {
         margin-top: 1rem;
     }
     .Encrypted-Message > h3 {
-        font-size: 1vw;
+        font-size: 2.5vw;
     }
     .Encrypted-Message > strong {
-        font-size: 1vw;
+        font-size: 2.5vw;
     }
     .Decrypted-Message > h3 {
-        font-size: 1vw;
+        font-size: 2.5vw;
     }
     .Decrypted-Message > strong {
-        font-size: 1vw;
+        font-size: 2.5vw;
     }
     .copy {
         height: 0.8rem;
